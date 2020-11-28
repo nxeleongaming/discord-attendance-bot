@@ -29,10 +29,10 @@ async def on_ready():
 @bot.event
 async def on_message(message):
     current_time = datetime.datetime.now()
-    old_timezone = pytz.timezone("US/Eastern")
+    old_timezone = pytz.timezone("Etc/UTC")
     new_timezone = pytz.timezone("Asia/Manila")
     new_timezone_timestamp = old_timezone.localize(current_time).astimezone(new_timezone)
-    server_timezone = "US/Eastern"
+    server_timezone = "Etc/UTC"
     id = client.get_guild(748121973955100763)
     OCPD = ["𝐎𝐂𝐏𝐃-𝐀𝐓𝐓𝐄𝐍𝐃𝐀𝐍𝐂𝐄"]
     OCMD = ["𝐎𝐂𝐌𝐃-𝐀𝐓𝐓𝐄𝐍𝐃𝐀𝐍𝐂𝐄"]
