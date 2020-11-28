@@ -1,0 +1,5 @@
+git+https://github.com/Rapptz/discord.py
+pandas
+python-csv
+pytz
+Jinja2
